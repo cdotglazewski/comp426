@@ -1,0 +1,170 @@
+body {
+    background-color: #faf9f6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+h1 {
+    background-color: dodgerblue;
+    border-radius: 3px;
+    color: white;
+    border-style: solid;
+    border-color: darkslategrey;
+}
+
+div {
+    text-align: center;
+}
+
+h2 {
+    background-color: aquamarine;
+    margin: 0 auto;
+    width: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    margin: 0 auto;
+    background-color: coral;
+    border: grey;
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, .15);
+    position: relative;
+    width: 450px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0px 40px 0px 10px;
+    font-size: 18px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .1);
+}
+
+.otherWrapper {
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, .15);
+    position: relative;
+    width: 450px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button i {
+    width: 100%;
+    color: bisque;
+    line-height: 50px;
+    font-size: 22px;
+}
+
+button:focus {
+    outline: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game {
+    width: 1300px;
+    height: 700px;
+    border-radius: 5px;
+    border: darkgrey;
+    border-style: solid;
+    background-color: beige;
+}
+
+#player {
+    width: 35px;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    top: 645px;
+}
+
+.jump{
+    animation: avoid 750ms;
+}
+
+@keyframes avoid {
+    0%{top: 645px;}
+    /* 30%{top: 615px;} */
+    50%{top: 575px;}
+    /* 70%{top: 615px;} */
+    100%{top: 645px;}
+}
+
+#obstacle {
+    width: 35px;
+    height: 25px;
+    background-color: green;
+    position: relative;
+    top: 620px;
+    left: 1260px;
+    animation: obstacle 1.5s infinite linear;
+}
+
+@keyframes obstacle {
+    0%{left:1260px;}
+    100%{left:-70px;}
+}
+
+.results {
+    padding: 0px;
+}
+
+.results ul {
+    margin: 0; 
+    padding: 0;
+}
+
+.results ul li {
+    list-style: none;
+    border-radius: 3px;
+    opacity: 0;
+    display: none;
+    padding: 8px 12px;
+    transition: all .5s linear;
+}
+
+.show .results ul li {
+    opacity: 1;
+    display: block;
+}
+
+.show .results {
+    padding: 10px;
+}
+
+.results ul li:hover {
+    background: grey;
+}
+
+.topForm {
+    text-emphasis: bold;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+input:hover {
+    background-color: lightgray;
+}

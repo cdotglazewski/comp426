@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/final/site/css/design.css"/>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+</head>
+<body>
+    <h1>Enter your username and password below to sign in.</h1>
+    <br><br>
+    <label>Email</label>
+    <input type="text" id="userEmail" placeholder="example@email.com">
+    <br><br>
+    <label>Password</label>
+    <input type="text" id="userPassword" placeholder="Password">
+    <br><br>
+    <button id="signIn">Login</button>
+    <button id="signUp">Sign Up</button>
+    <button id="signOut">Logout</button>
+    <script type="module" src="/final/site/js/login.js"></script>
+    <br><br>
+    <button id="goToIndex" onclick="location.href = 'index.html';">Begin!</button>
+</body>
+</html>

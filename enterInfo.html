@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Enter Information</title>
+        <link rel="stylesheet" href="/final/site/css/design.css"/>
+    </head>
+
+    <body>
+        <div class="topForm">
+            <h1>Enter your origin location information here:</h1>
+        </div>
+        <div class="inputCSS">
+            <form>
+                <label for="addressFrom">Address:</label>
+                <div class = "otherContainer">
+                    <div class = "otherWrapper">
+                        <input type="text" id="addressFrom" name="Address" placeholder="Origin Address" autocomplete="chrome-off">
+                        <div class = "otherResults">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <label for="city">City:</label>
+                <div class = "otherContainer">
+                    <div class = "otherWrapper">
+                        <input class="otherInput" type="text" id="cityFrom" name="City" placeholder="Origin City" autocomplete="chrome-off">
+                        <div class = "otherResults">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <label for="state">State:</label>
+                <div class = "container">
+                    <div class = "wrapper">
+                        <input type="text" id="stateFrom" name="State" placeholder="Origin State" autocomplete="chrome-off">
+                        <div class = "results">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="topForm">
+            <h1>Now enter your destination location information here:</h1>
+        </div>
+        <div class="inputCSS">
+            <form>
+                <label for="addressTo">Address:</label>
+                <div class = "otherContainer">
+                    <div class = "otherWrapper">
+                        <input type="text" id="addressTo" name="Address" placeholder="Destination Address" autocomplete="chrome-off">
+                            <div class = "otherResults">
+                            </div>
+                    </div>
+                </div>
+                <br>
+                <label for="city">City:</label>
+                <div class = "otherContainer">
+                    <div class = "otherWrapper">
+                            <input type="text" id="cityTo" name="City" placeholder="Destination City" autocomplete="chrome-off">
+                            <div class = "otherResults">
+                            </div>
+                    </div>
+                </div>
+                <br>
+                <label for="state">State:</label>
+                <div class = "otherContainer">
+                    <div class = "otherWrapper">
+                            <input type="text" id="stateTo" name="State" placeholder="Destination State" autocomplete="chrome-off">
+                            <div class = "otherResults">
+                            </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br><br>
+        <div>
+            <h2 id='finalizeDetails'>Congrats, you're done! Now click the finalize button below to see your dream trip details.</h2>
+        </div>
+        <br>
+        <div>
+            <button id="finalizeInfo">Finalize</button>
+        </div>
+        <div id="populate"></div>
+        <script type="module" src="/final/site/js/script.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="/final/site/js/axios.js" type="module" defer></script>
+
+    </body>
+</html>
